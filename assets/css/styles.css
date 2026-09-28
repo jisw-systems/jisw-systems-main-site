@@ -1296,3 +1296,142 @@ main, .site-footer { margin-left: 0; }
   .project-preview { min-height: 330px; }
   .project-preview__intro { min-height: 112px; }
 }
+
+/* Shared type and spacing scale keeps the long page calm and easy to scan. */
+:root { --page-gutter: 72px; --section-space: 78px; }
+.site-header { height: 68px; min-height: 68px; padding-right: var(--page-gutter); padding-left: var(--page-gutter); }
+.site-nav { gap: 24px; }
+.site-nav a { font-size: 12px; }
+.hero { min-height: 760px; padding: 112px var(--page-gutter) 84px; }
+.hero-layout { width: min(100%,1080px); grid-template-columns: minmax(0,1.15fr) minmax(280px,.85fr); gap: 72px; }
+.hero__content { max-width: 680px; }
+.hero h1 { font-size: 64px; line-height: 1.04; }
+.hero__statement { font-size: 17px; }
+.hero-annotation { max-width: 290px; }
+.hero-annotation__index { font-size: 56px; }
+.hero-annotation p { font-size: 13px; }
+.hero__coordinates { right: var(--page-gutter); left: var(--page-gutter); font-size: 9px; }
+.content-section { max-width: 1120px; padding: var(--section-space) var(--page-gutter); }
+.section-heading { margin-bottom: 26px; }
+.section-heading h2, .philosophy-section h2, .contact-copy h2 { font-size: 36px; line-height: 1.2; }
+.section-heading .eyebrow, .philosophy-section .eyebrow, .contact-copy .eyebrow { font-size: 10px; }
+.section-heading--row { align-items: center; gap: 20px; }
+.section-aside { font-size: 11px; }
+.about-section { grid-template-columns: minmax(210px,.7fr) minmax(0,1.3fr); column-gap: 64px; }
+.about-copy p { font-size: 16px; line-height: 1.75; }
+.about-copy .about-copy__lead { font-size: 19px; line-height: 1.55; }
+
+.projects-section { padding: var(--section-space) var(--page-gutter) 68px; }
+.projects-section > * { width: min(100%,1040px); }
+.projects-section .section-heading { margin-bottom: 24px; }
+.project-card { grid-template-columns: minmax(300px,.9fr) minmax(0,1.1fr); min-height: 500px; }
+.project-card__body { padding: 34px; }
+.project-card__topline { align-items: center; gap: 18px; }
+.project-type { max-width: none; font-size: 10px; }
+.project-status { font-size: 10px; }
+.project-card h3 { margin-top: 34px; margin-bottom: 10px; font-size: 26px; line-height: 1.25; }
+.project-card__body > p { font-size: 15px; line-height: 1.7; }
+.text-link { padding-top: 24px; font-size: 12px; }
+.project-preview { min-height: 500px; padding: 18px 24px; }
+.project-preview__bar { min-height: 34px; padding-bottom: 12px; font-size: 9px; }
+.project-preview__intro { min-height: 150px; padding: 20px 4px; }
+.project-preview__intro > span { font-size: 9px; }
+.project-preview__intro h4 { margin-top: 14px; font-size: 24px; line-height: 1.3; }
+.project-modules li { min-height: 43px; grid-template-columns: 30px minmax(0,1fr) auto; gap: 9px; font-size: 12px; }
+.project-modules li > span:first-child { font-size: 9px; }
+.project-modules li > span:last-child { font-size: 8px; }
+.projects-note { margin-top: 12px; font-size: 10px; }
+
+.roadmap-section { padding-top: 72px; }
+.roadmap-grid { gap: 16px; }
+.roadmap-column { padding: 22px 24px; }
+.roadmap-column h3 { font-size: 11px; }
+.roadmap-list li { min-height: 48px; grid-template-columns: 30px minmax(0,1fr) auto; gap: 9px; font-size: 14px; }
+.roadmap-number { font-size: 10px; }
+.roadmap-state { font-size: 9px; }
+.roadmap-note { font-size: 12px; }
+
+.team-grid { gap: 16px; }
+.team-member { min-height: 176px; padding: 24px; }
+.team-member__number { font-size: 9px; }
+.team-member h3 { margin-top: 23px; }
+.team-handle__at { font-size: 14px; }
+.team-handle__initial { font-size: 36px; }
+.team-member p { font-size: 14px; }
+.philosophy-section__inner { max-width: 1120px; padding: 76px var(--page-gutter); }
+.philosophy-quote blockquote { font-size: 23px; line-height: 1.5; }
+.philosophy-quote p { font-size: 10px; }
+.philosophy-caption { font-size: 9px; }
+.contact-section { grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr); gap: 64px; }
+.contact-copy > p:last-child { font-size: 15px; }
+.contact-link { min-height: 58px; font-size: 14px; }
+.site-footer { min-height: 76px; padding-right: var(--page-gutter); padding-left: var(--page-gutter); }
+
+@media (max-width: 1000px) {
+  :root { --page-gutter: 36px; --section-space: 68px; }
+  .hero { padding-top: 106px; }
+  .hero-layout { gap: 38px; }
+  .hero h1 { font-size: 54px; }
+  .about-section, .contact-section { column-gap: 38px; }
+}
+
+@media (max-width: 760px) {
+  :root { --page-gutter: 24px; --section-space: 58px; }
+  .site-header { height: 66px; min-height: 66px; padding-right: var(--page-gutter); padding-left: var(--page-gutter); }
+  .site-nav { gap: 0; }
+  .hero { min-height: 650px; padding: 82px var(--page-gutter) 72px; }
+  .hero-layout { width: min(100%,560px); grid-template-columns: minmax(0,1fr); gap: 28px; }
+  .hero__logo { width: 88px; height: 48px; margin-bottom: 22px; }
+  .hero h1 { font-size: 46px; }
+  .hero__statement { max-width: 360px; font-size: 16px; }
+  .hero-annotation { display: none; }
+  .hero__coordinates { right: var(--page-gutter); left: var(--page-gutter); gap: 12px; font-size: 8px; }
+  .content-section { padding: var(--section-space) var(--page-gutter); }
+  .section-heading h2, .philosophy-section h2, .contact-copy h2 { font-size: 32px; }
+  .about-section, .contact-section { grid-template-columns: minmax(0,1fr); gap: 20px; }
+  .about-section { row-gap: 20px; }
+  .about-section .section-heading { margin-bottom: 0; }
+  .about-copy .about-copy__lead { font-size: 18px; }
+  .projects-section { padding: var(--section-space) var(--page-gutter) 52px; }
+  .projects-section > * { max-width: 600px; }
+  .section-heading--row { align-items: flex-start; }
+  .section-aside { max-width: 130px; padding-top: 3px; text-align: right; }
+  .project-card { grid-template-columns: minmax(0,1fr); min-height: 0; }
+  .project-card__body { min-height: 0; padding: 24px; }
+  .project-card__topline { align-items: center; }
+  .project-card h3 { margin-top: 25px; font-size: 24px; }
+  .project-preview { min-height: 0; padding: 16px 20px; border-top: 1px solid rgba(144,182,214,.15); border-left: 0; }
+  .project-preview__intro { min-height: 112px; padding: 15px 4px; }
+  .project-preview__intro h4 { font-size: 21px; }
+  .project-modules li { min-height: 42px; }
+  .roadmap-section { padding-top: 58px; }
+  .roadmap-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .roadmap-column { padding: 18px; }
+  .team-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
+  .team-member { min-height: 148px; }
+  .philosophy-section__inner { grid-template-columns: minmax(0,1fr); padding: 58px var(--page-gutter); }
+  .philosophy-section__inner > .eyebrow, .philosophy-section h2, .philosophy-quote, .philosophy-caption { grid-column: 1; }
+  .philosophy-quote { grid-row: auto; margin-top: 24px; padding-left: 26px; }
+  .philosophy-quote blockquote { font-size: 20px; }
+  .philosophy-caption { margin-top: 22px; }
+  .contact-section { gap: 20px; }
+  .site-footer { min-height: 72px; padding: 18px var(--page-gutter); }
+}
+
+@media (max-width: 390px) {
+  :root { --page-gutter: 20px; }
+  .hero h1 { font-size: 40px; }
+  .section-heading--row { flex-direction: column; gap: 8px; }
+  .section-aside { max-width: none; padding: 0; text-align: left; }
+  .project-card__body { padding: 21px; }
+  .project-card__topline { align-items: flex-start; }
+  .project-type { max-width: 185px; font-size: 9px; }
+  .project-status { white-space: nowrap; font-size: 9px; }
+  .project-preview { padding: 14px 16px; }
+  .project-preview__bar { font-size: 8px; }
+  .project-modules li { grid-template-columns: 25px minmax(0,1fr) auto; gap: 6px; font-size: 11px; }
+  .project-modules li > span:last-child { font-size: 7px; }
+  .roadmap-list li { grid-template-columns: 25px minmax(0,1fr) auto; gap: 7px; font-size: 12px; }
+  .contact-link { grid-template-columns: 54px minmax(0,1fr) 16px; gap: 7px; font-size: 12px; }
+  .contact-link > span:nth-child(2) { overflow-wrap: anywhere; }
+}
