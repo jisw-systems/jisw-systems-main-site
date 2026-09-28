@@ -1036,6 +1036,85 @@ main, .site-footer { position: relative; z-index: 1; }
   .contact-link > span:nth-child(2) { overflow-wrap: anywhere; }
 }
 
+.team-member h3.team-member__monogram {
+  display: grid;
+  width: 66px;
+  height: 66px;
+  place-items: center;
+  margin: 0;
+  border: 1px solid rgba(98,212,230,.32);
+  border-radius: 3px;
+  background: rgba(98,212,230,.045);
+  color: var(--accent);
+  font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif;
+  font-size: 43px;
+  font-weight: 500;
+  line-height: 1;
+}
+@media (max-width: 760px) {
+  .team-member h3.team-member__monogram { width: 56px; height: 56px; font-size: 37px; }
+}
+@media (max-width: 390px) {
+  .team-member h3.team-member__monogram { width: 50px; height: 52px; font-size: 34px; }
+}
+
+/* Final Team rhythm: distinct monograms, role labels, and readable descriptions. */
+.team-member { display: flex; min-height: 188px; align-items: center; padding: 28px; }
+.team-member__identity { display: grid; width: 100%; grid-template-columns: 68px minmax(0,1fr); align-items: center; gap: 24px; padding-bottom: 13px; }
+.team-member__monogram { display: grid; width: 66px; height: 66px; place-items: center; margin: 0; border: 1px solid rgba(98,212,230,.32); border-radius: 3px; background: rgba(98,212,230,.045); color: var(--accent); font: 500 43px/1 "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; }
+.team-member__details { display: grid; min-width: 0; gap: 11px; }
+.team-member__number { font-size: 9px; line-height: 1.5; letter-spacing: .07em; }
+.team-member__details p { margin: 0; color: var(--sub); font-size: 14px; line-height: 1.65; }
+
+@media (max-width: 760px) {
+  .team-member { min-height: 158px; padding: 20px; }
+  .team-member__identity { grid-template-columns: 58px minmax(0,1fr); gap: 18px; padding-bottom: 8px; }
+  .team-member__monogram { width: 56px; height: 56px; font-size: 37px; }
+  .team-member__details { gap: 9px; }
+  .team-member__number { font-size: 8px; }
+  .team-member__details p { font-size: 13px; }
+}
+
+@media (max-width: 390px) {
+  .team-member { padding: 18px; }
+  .team-member__identity { grid-template-columns: 52px minmax(0,1fr); gap: 14px; }
+  .team-member__monogram { width: 50px; height: 52px; font-size: 34px; }
+  .team-member__number { font-size: 7px; }
+  .team-member__details p { font-size: 12px; }
+}
+
+.team-member { display: flex; min-height: 188px; align-items: center; padding: 28px; }
+.team-member__identity { display: grid; width: 100%; grid-template-columns: 68px minmax(0,1fr); align-items: center; gap: 24px; padding-bottom: 13px; }
+.team-member__monogram { display: grid; width: 66px; height: 66px; place-items: center; margin: 0; border: 1px solid rgba(98,212,230,.32); border-radius: 3px; background: rgba(98,212,230,.045); color: var(--accent); font: 500 43px/1 "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; }
+.team-member__details { display: grid; min-width: 0; gap: 11px; }
+.team-member__number { font-size: 9px; line-height: 1.5; letter-spacing: .07em; }
+.team-member__details p { margin: 0; color: var(--sub); font-size: 14px; line-height: 1.65; }
+
+.philosophy-section__inner { grid-template-columns: minmax(190px,.65fr) minmax(0,1.35fr); }
+.philosophy-quote blockquote { max-width: 650px; font-size: 21px; font-weight: 430; line-height: 1.58; }
+.philosophy-quote p { margin-top: 19px; font-size: 10px; line-height: 1.6; letter-spacing: .07em; }
+.philosophy-caption { max-width: 240px; line-height: 1.7; }
+
+@media (max-width: 760px) {
+  .team-member { min-height: 158px; padding: 20px; }
+  .team-member__identity { grid-template-columns: 58px minmax(0,1fr); gap: 18px; padding-bottom: 8px; }
+  .team-member__monogram { width: 56px; height: 56px; font-size: 37px; }
+  .team-member__details { gap: 9px; }
+  .team-member__number { font-size: 8px; }
+  .team-member__details p { font-size: 13px; }
+  .philosophy-section__inner { grid-template-columns: minmax(0,1fr); }
+  .philosophy-quote blockquote { font-size: 19px; }
+  .philosophy-caption { max-width: none; }
+}
+
+@media (max-width: 390px) {
+  .team-member { padding: 18px; }
+  .team-member__identity { grid-template-columns: 52px minmax(0,1fr); gap: 14px; }
+  .team-member__monogram { width: 50px; height: 52px; font-size: 34px; }
+  .team-member__number { font-size: 7px; }
+  .team-member__details p { font-size: 12px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .js .build-step { animation: none; opacity: 1; }
   .build-loop__signal i { animation: none; }
