@@ -1257,3 +1257,42 @@ main, .site-footer { margin-left: 0; }
 .team-member h3.team-handle { display: flex; align-items: baseline; gap: 2px; }
 .team-handle__at { color: var(--accent); font: 500 .9rem ui-monospace, SFMono-Regular, Menlo, monospace; }
 .team-handle__initial { color: var(--text); font: 500 2rem/1 "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; }
+
+.project-preview {
+  display: flex;
+  min-height: 455px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 14px 20px 16px;
+  border-left: 1px solid rgba(144,182,214,.15);
+  background: radial-gradient(ellipse at 50% 26%, rgba(35,104,145,.16), transparent 64%), #0b1420;
+}
+.project-preview__bar {
+  position: static;
+  min-height: 31px;
+  flex: 0 0 auto;
+  padding: 0 0 11px;
+  border: 0;
+  border-bottom: 1px solid rgba(144,182,214,.15);
+  background: transparent;
+}
+.project-preview__bar span:first-child { color: #b0c2d1; }
+.project-preview__brand { display: grid; min-height: 150px; flex: 1 1 auto; place-items: center; }
+.project-preview__brand img { display: block; width: min(100%,170px); max-height: 142px; object-fit: contain; filter: grayscale(1) brightness(1.4); }
+.project-modules { margin: 0; padding: 0; border-top: 1px solid rgba(144,182,214,.14); list-style: none; }
+.project-modules li { display: grid; min-height: 39px; grid-template-columns: 27px minmax(0,1fr) auto; align-items: center; gap: 7px; border-bottom: 1px solid rgba(144,182,214,.09); color: #b5c4d0; font-size: .69rem; }
+.project-modules li > span:first-child { color: #70869a; font: 8px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.project-modules li > span:last-child { color: #7e98a9; font: 7px ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .06em; }
+
+@media (max-width: 760px) {
+  .project-preview { min-height: 370px; padding: 14px 15px; border-top: 1px solid rgba(144,182,214,.15); border-left: 0; }
+  .project-preview__brand { min-height: 118px; }
+  .project-preview__brand img { width: 140px; max-height: 112px; }
+  .project-modules li { min-height: 38px; font-size: .68rem; }
+}
+
+@media (max-width: 390px) {
+  .project-preview { min-height: 330px; }
+  .project-preview__brand { min-height: 100px; }
+  .project-preview__brand img { width: 124px; max-height: 96px; }
+}
