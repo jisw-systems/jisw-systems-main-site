@@ -1150,7 +1150,7 @@ main, .site-footer { margin-left: 0; }
 }
 .js .site-header { animation: none; }
 .brand { gap: 11px; font-size: .84rem; }
-.brand__logo { width: 34px; height: 34px; }
+.brand__logo { width: auto; height: 30px; max-width: 56px; flex: 0 0 auto; border: 0; border-radius: 0; background: transparent; object-fit: contain; }
 .nav-kicker, .nav-footer { display: none; }
 .site-nav { display: flex; flex-direction: row; align-items: center; gap: clamp(17px,2.4vw,34px); margin: 0; }
 .site-nav a { padding: 7px 0; color: #9eafbe; font: 11px var(--ff); }
