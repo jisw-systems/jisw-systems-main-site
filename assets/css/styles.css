@@ -188,6 +188,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .project-status .status-light { width: 6px; height: 6px; margin-right: 6px; }
 .project-card h3 { margin: 30px 0 5px; font-size: 1.55rem; font-weight: 600; }
 .project-card__body > p { max-width: 490px; margin: 0; color: var(--sub); font-size: .9rem; }
+.project-card__link { margin-top: auto; }
 .text-link { display: inline-flex; align-items: center; gap: 9px; margin-top: auto; padding-top: 20px; color: var(--text); font-size: .78rem; font-weight: 650; text-decoration: none; }
 .text-link span { color: var(--accent-soft); transition: transform .2s ease; }
 .text-link:hover span { transform: translate(3px,-3px); }
@@ -1380,7 +1381,7 @@ main, .site-footer { margin-left: 0; }
 :root { --page-gutter: 72px; --section-space: 78px; }
 .site-header { height: 68px; min-height: 68px; padding-right: var(--page-gutter); padding-left: var(--page-gutter); }
 .site-nav { gap: 24px; }
-.site-nav a { font-size: 12px; }
+.site-nav a { min-height: 44px; padding-top: 9px; padding-bottom: 9px; font-size: 14px; }
 .hero { min-height: 760px; padding: 112px var(--page-gutter) 84px; }
 .hero-layout { width: min(100%,1080px); grid-template-columns: minmax(0,1.15fr) minmax(280px,.85fr); gap: 72px; }
 .hero__content { max-width: 680px; }
@@ -1393,7 +1394,7 @@ main, .site-footer { margin-left: 0; }
 .content-section { max-width: 1120px; padding: var(--section-space) var(--page-gutter); }
 .section-heading { margin-bottom: 26px; }
 .section-heading h2, .philosophy-section h2, .contact-copy h2 { font-size: 36px; line-height: 1.2; }
-.section-heading .eyebrow, .philosophy-section .eyebrow, .contact-copy .eyebrow { font-size: 10px; }
+.section-heading .eyebrow, .philosophy-section .eyebrow, .contact-copy .eyebrow, .hero .eyebrow { font-size: 11px; }
 .section-heading--row { align-items: center; gap: 20px; }
 .section-aside { font-size: 11px; }
 .about-section { grid-template-columns: minmax(210px,.7fr) minmax(0,1.3fr); column-gap: 64px; }
@@ -1406,44 +1407,45 @@ main, .site-footer { margin-left: 0; }
 .project-card { grid-template-columns: minmax(300px,.9fr) minmax(0,1.1fr); min-height: 500px; }
 .project-card__body { padding: 34px; }
 .project-card__topline { align-items: center; gap: 18px; }
-.project-type { max-width: none; font-size: 10px; }
-.project-status { font-size: 10px; }
+.project-type { max-width: none; font-size: 11px; }
+.project-status { font-size: 11px; }
 .project-card h3 { margin-top: 34px; margin-bottom: 10px; font-size: 26px; line-height: 1.25; }
-.project-card__body > p { font-size: 15px; line-height: 1.7; }
-.text-link { padding-top: 24px; font-size: 12px; }
+.project-card__body > p { font-size: 16px; line-height: 1.7; }
+.text-link { padding-top: 24px; font-size: 14px; }
 .project-preview { min-height: 500px; padding: 18px 24px; }
-.project-preview__bar { min-height: 34px; padding-bottom: 12px; font-size: 9px; }
+.project-preview__bar { min-height: 34px; padding-bottom: 12px; font-size: 10px; }
 .project-preview__intro { min-height: 150px; padding: 20px 4px; }
-.project-preview__intro > span { font-size: 9px; }
+.project-preview__intro > span { font-size: 10px; }
 .project-preview__intro h4 { margin-top: 14px; font-size: 24px; line-height: 1.3; }
-.project-modules li { min-height: 43px; grid-template-columns: 30px minmax(0,1fr) auto; gap: 9px; font-size: 12px; }
-.project-modules li > span:first-child { font-size: 9px; }
-.project-modules li > span:last-child { font-size: 8px; }
+.project-modules li { min-height: 43px; grid-template-columns: 30px minmax(0,1fr) auto; gap: 9px; font-size: 14px; }
+.project-modules li > span:first-child { font-size: 10px; }
+.project-modules li > span:last-child { font-size: 9px; }
 .projects-note { margin-top: 12px; font-size: 10px; }
 
 .roadmap-section { padding-top: 72px; }
 .roadmap-grid { gap: 16px; }
 .roadmap-column { padding: 22px 24px; }
 .roadmap-column h3 { font-size: 11px; }
-.roadmap-list li { min-height: 48px; grid-template-columns: 30px minmax(0,1fr) auto; gap: 9px; font-size: 14px; }
-.roadmap-number { font-size: 10px; }
-.roadmap-state { font-size: 9px; }
-.roadmap-note { font-size: 12px; }
+.roadmap-list li { min-height: 50px; grid-template-columns: 30px minmax(0,1fr) auto; gap: 9px; font-size: 15px; }
+.roadmap-number { font-size: 11px; }
+.roadmap-state { font-size: 10px; }
+.roadmap-note { font-size: 14px; }
 
 .team-grid { gap: 16px; }
 .team-member { min-height: 176px; padding: 24px; }
-.team-member__number { font-size: 9px; }
+.team-member__number { font-size: 10px; }
 .team-member h3 { margin-top: 23px; }
 .team-handle__at { font-size: 14px; }
 .team-handle__initial { font-size: 36px; }
-.team-member p { font-size: 14px; }
+.team-member p { font-size: 15px; }
 .philosophy-section__inner { max-width: 1120px; padding: 76px var(--page-gutter); }
 .philosophy-quote blockquote { font-size: 23px; line-height: 1.5; }
 .philosophy-quote p { font-size: 10px; }
 .philosophy-caption { font-size: 9px; }
 .contact-section { grid-template-columns: minmax(220px,.7fr) minmax(0,1.3fr); gap: 64px; }
 .contact-copy > p:last-child { font-size: 15px; }
-.contact-link { min-height: 58px; font-size: 14px; }
+.contact-link { min-height: 60px; font-size: 15px; }
+.contact-link__label { font-size: 11px; }
 .site-footer { min-height: 76px; padding-right: var(--page-gutter); padding-left: var(--page-gutter); }
 
 @media (max-width: 1000px) {
@@ -1458,6 +1460,7 @@ main, .site-footer { margin-left: 0; }
   :root { --page-gutter: 24px; --section-space: 58px; }
   .site-header { height: 66px; min-height: 66px; padding-right: var(--page-gutter); padding-left: var(--page-gutter); }
   .site-nav { gap: 0; }
+  .site-nav a { min-height: 48px; padding-top: 12px; padding-bottom: 12px; font-size: 14px; }
   .hero { min-height: 650px; padding: 82px var(--page-gutter) 72px; }
   .hero-layout { width: min(100%,560px); grid-template-columns: minmax(0,1fr); gap: 28px; }
   .hero__logo { width: 88px; height: 48px; margin-bottom: 22px; }
@@ -1482,7 +1485,8 @@ main, .site-footer { margin-left: 0; }
   .project-preview { min-height: 0; padding: 16px 20px; border-top: 1px solid rgba(144,182,214,.15); border-left: 0; }
   .project-preview__intro { min-height: 112px; padding: 15px 4px; }
   .project-preview__intro h4 { font-size: 21px; }
-  .project-modules li { min-height: 42px; }
+  .project-modules li { min-height: 46px; grid-template-columns: 27px minmax(0,1fr); font-size: 14px; }
+  .project-modules li > span:last-child { display: none; }
   .roadmap-section { padding-top: 58px; }
   .roadmap-grid { grid-template-columns: minmax(0,1fr); gap: 12px; }
   .roadmap-column { padding: 18px; }
@@ -1504,13 +1508,12 @@ main, .site-footer { margin-left: 0; }
   .section-aside { max-width: none; padding: 0; text-align: left; }
   .project-card__body { padding: 21px; }
   .project-card__topline { align-items: flex-start; }
-  .project-type { max-width: 185px; font-size: 9px; }
-  .project-status { white-space: nowrap; font-size: 9px; }
+  .project-type { max-width: 185px; font-size: 10px; }
+  .project-status { white-space: nowrap; font-size: 10px; }
   .project-preview { padding: 14px 16px; }
   .project-preview__bar { font-size: 8px; }
-  .project-modules li { grid-template-columns: 25px minmax(0,1fr) auto; gap: 6px; font-size: 11px; }
-  .project-modules li > span:last-child { font-size: 7px; }
-  .roadmap-list li { grid-template-columns: 25px minmax(0,1fr) auto; gap: 7px; font-size: 12px; }
-  .contact-link { grid-template-columns: 54px minmax(0,1fr) 16px; gap: 7px; font-size: 12px; }
+  .project-modules li { grid-template-columns: 25px minmax(0,1fr); gap: 6px; font-size: 13px; }
+  .roadmap-list li { grid-template-columns: 25px minmax(0,1fr) auto; gap: 7px; font-size: 14px; }
+  .contact-link { grid-template-columns: 54px minmax(0,1fr) 16px; gap: 7px; font-size: 13px; }
   .contact-link > span:nth-child(2) { overflow-wrap: anywhere; }
 }
