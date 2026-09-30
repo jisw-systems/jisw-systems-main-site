@@ -14,7 +14,7 @@ Publish the repository root as the Pages source. The site uses relative asset pa
 
 ## Project structure
 
-- `index.html`: portfolio landing page, project overview, roadmap, and contact links
+- `index.html`: portfolio landing page, current project overview, and contact links
 - `assets/css/styles.css`: visual system and responsive layouts
 - `assets/js/main.js`: mobile navigation, reveal transitions, and current year
 - `assets/jisw-logo.png`: current J&I SimWorks Systems logo
